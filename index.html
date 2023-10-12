@@ -7,6 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="./style/reset.css">
    <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
    <title>SmartSpace</title>
 </head>
 
@@ -39,8 +40,73 @@
             </nav>
          </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+         <section class="main__hero hero">
+            <div class="hero__container">
+               <div class="hero__body hero-body">
+                  <div class="hero-body__content content-hero-body">
+                     <h2 class="content-hero-body__subtitle">RESIDENTIAL & OFFICE SPACES</h2>
+                     <h1 class="content-hero-body__title">Smart Living Style
+                        for Smart People
+                     </h1>
+                     <p class="content-hero-body__text">Much did had call new drew that kept. Limits expect wonder law
+                        she. Now has you views woman noisy match money rooms.
+                     </p>
+                     <form action="" class="content-hero-body__form form-hero">
+                        <input type="text" class="form-hero__input" placeholder="Enter Zipcode to search properties">
+                        <button class="form-hero__button">Search Now!</button>
+                     </form>
+                  </div>
+                  <!-- Slider main container -->
+                  <div class="hero-body__slider slider-hero swiper">
+                     <!-- Additional required wrapper -->
+                     <div class="slider-hero__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slider-hero__slide swiper-slide">
+                           <img src="./img/hero/header.Image.jpg" alt="">
+                        </div>
+                        <div class="slider-hero__slide swiper-slide">
+                           <img src="./img/hero/header.Image.jpg" alt="">
+                        </div>
+                        <div class="slider-hero__slide swiper-slide">
+                           <img src="./img/hero/header.Image.jpg" alt="">
+                        </div>
+                     </div>
+                      <!-- If we need navigation buttons -->
+                     <div class="slider-hero__arrow swiper-button-prev"></div>
+                     <div class="slider-hero__arrow swiper-button-next"></div>
+                  </div>
+               </div>
+               <div class="hero-body__partners partners-hero">
+                  <h4 class="partners-hero__title">Our Amazing Partners</h4>
+                  <ul class="partners-hero__list">
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners1.svg" alt="Buzz">
+                     </li>
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners2.svg" alt="Chaze">
+                     </li>
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners3.svg" alt="Microsoft">
+                     </li>
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners4.svg" alt="Gucc">
+                     </li>
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners5.svg" alt="Airbnb">
+                     </li>
+                     <li class="partners-hero__item">
+                        <img src="./img/hero/partners6.svg" alt="Uber">
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </main>
       <footer class="footer"></footer>
    </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="./js/script.js"></script>
 </body>
+
 </html>
