@@ -19,10 +19,10 @@ body {
 [class*='__container'] {
    max-width: 1200px;
    margin: 0 auto;
-   padding: 10px 15px;
+   padding: 10px 15px 0px 15px;
 }
 
-@media (max-width:1220px) {
+@media (max-width:1199px) {
    [class*='__container'] {
       max-width: 970px;
    }
@@ -118,7 +118,9 @@ body {
 }
 
 /* ===================== HERO  =========================== */
-.hero {}
+.hero {
+   padding-bottom: 100px;
+}
 
 .hero__container {
    padding-top: 184px;
@@ -138,7 +140,7 @@ body {
 .hero__body {}
 
 .hero-body {
- /* align-items: flex-start; */
+ align-items: flex-start;
    display: flex;
    margin-bottom: 14px;
 }
@@ -149,8 +151,10 @@ body {
 }
 
 
-
-.content-hero-body {}
+.content-hero-body {
+   position: relative;
+   z-index: 2;
+}
 
 .content-hero-body__subtitle {
    color: #F90;
@@ -180,7 +184,6 @@ body {
 
 .form-hero {
    display: flex;
-   height: 86px;
    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.02), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
    margin-right: -188px;
    position: relative;
@@ -189,6 +192,7 @@ body {
 }
 
 .form-hero__input {
+   height: 86px;
    padding: 30px 0px 30px 74px;
    border: 1px solid #DADADA;
    flex: 1 1 auto;
@@ -200,6 +204,7 @@ body {
 
 
 .form-hero__button {
+   height: 86px;
    padding: 32px 40px;
    background-color: #F85A47;
    font-size: 17px;
@@ -231,7 +236,7 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-    object-fit: cover;
+   object-fit: cover;
 }
 
 .hero-body__partners {}
@@ -249,7 +254,7 @@ margin-bottom: 27px;
    align-items: center;
    max-width: 768px;
    justify-content: space-between;
-   gap: 5px;
+   gap: 25px;
    flex-wrap: wrap;
    position: relative;
    z-index: 2;
@@ -257,4 +262,49 @@ margin-bottom: 27px;
 
 .partners-hero__item img{
    max-width: 100%;
+}
+
+@media(max-width:1198.98px){
+   .hero__container {
+   padding-top: 100px;
+}
+   .hero-body{
+      display: block;
+   }
+   .form-hero{
+      margin: 0 0 40px 0;
+   }
+   .content-hero-body__title, 
+   .content-hero-body__text{
+      max-width: 100%;
+   }
+}
+
+@media(max-width:767.98px){
+   .hero {
+   padding-bottom: 60px;
+}
+.content-hero-body__subtitle{
+   font-size: 20px;
+}
+   .content-hero-body__title{
+      font-size: 30px;
+     line-height: 120%;
+   }
+   .form-hero{
+      flex-wrap: wrap;
+   }
+   .form-hero__button{
+      flex: 1 1 100%;
+   }
+   .form-hero__input{
+      background: #fff;
+   }
+
+   .form-hero{
+      margin-bottom: 40px;
+   }
+   .partners-hero__list{
+      justify-content: center;
+   }
 }
