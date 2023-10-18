@@ -81,10 +81,6 @@ body {
    font-weight: 800;
 }
 
-.header__menu {}
-
-.menu {}
-
 .header__list {
    display: flex;
    column-gap: 46px;
@@ -152,7 +148,6 @@ body {
    ;
 }
 
-.hero__body {}
 
 .hero-body {
    align-items: flex-start;
@@ -254,9 +249,6 @@ body {
    object-fit: cover;
 }
 
-.hero-body__partners {}
-
-.partners-hero {}
 
 .partners-hero__title {
    font-size: 17px;
@@ -341,8 +333,6 @@ body {
 .how {
    padding: 110px 0;
 }
-
-.how__container {}
 
 .how__title {
    margin-bottom: 70px;
